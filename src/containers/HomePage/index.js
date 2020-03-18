@@ -2,13 +2,15 @@ import React from 'react'
 import H1 from '../../components/H1'
 import styled from 'styled-components';
 import {media} from '../../utils/styleUtils'
-
-import List from '../List';
-
+// Data
 import projects from '../../data/projects'
 
-// const Grid = styled.div`
-// `; 
+//Components
+import List from '../List';
+import RightSection from './RightSection';
+import LeftSection from './LeftSection';
+
+
 console.log(projects);
 const MainRow = styled.div`
   display: flex;
@@ -19,28 +21,6 @@ const MainRow = styled.div`
   `}
   
 `; 
-
-const Col = styled.div`
-  position: relative;
-  padding: 8rem;
-  flex: 1;
-  ${props => props.right && `
-    right: 0;
-    position: absolute;
-    width: 768px;
-  `}
-
-  ${props => props.left && `
-    position: fixed;
-  `}
-
-  
-  ${media.phone`
-    flex-direction: row;
-    flex: 1;
-    padding: 0 2rem ;
-  `}
-`;
 
 const A = styled.a`
   color: #000;
@@ -60,7 +40,7 @@ const Title = styled.div`
 export default function HomePage(){
   return(
     <MainRow>
-      <Col left>
+      <LeftSection>
         <Title>
           <H1>Hello, I'm Matías Labra.</H1>
           <p>I am a Software Engineer living in Brisbane, Australia.
@@ -68,15 +48,15 @@ export default function HomePage(){
             It always amazes me how lines of code can make lives easier.
           </p>
           <div className="links">
-            <div className="icon"><a href="mailto:gmlabra@gmail.com"><i className="ion-email "></i></a></div>
-            <div className="icon"><a href="https://www.linkedin.com/in/matias-labra-a2bb4a172/"><i className="ion-social-linkedin-outline icon"></i>LinkedIn</a></div>
-            <div className="icon"><a href="https://github.com/matiaslabra"><i className="ion-social-github icon"></i>GitHub</a></div>
+            <div className="icon"><a target="_blank" rel="noopener noreferrer" href="mailto:gmlabra@gmail.com"><i className="ion-email "></i></a></div>
+            <div className="icon"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/matias-labra-a2bb4a172/"><i className="ion-social-linkedin-outline icon"></i>LinkedIn</a></div>
+            <div className="icon"><a target="_blank" rel="noopener noreferrer" href="https://github.com/matiaslabra"><i className="ion-social-github icon"></i>GitHub</a></div>
           </div>
         </Title>
-      </Col>
-      <Col right>
+      </LeftSection>
+      <RightSection>
         <List items= {projects}/>
-      </Col>
+      </RightSection>
     </MainRow>
   );
 }

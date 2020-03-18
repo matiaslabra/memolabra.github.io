@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const A = styled.a`
+const LinkContainer = styled.a`
   display: block;
   color: #fff;
   background: #202022;
@@ -20,4 +20,4 @@ const A = styled.a`
 
 `;
 
-export default A;
+export default LinkContainer;

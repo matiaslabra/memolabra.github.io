@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import A from '../../components/Card/A';
+import LinkContainer from '../../components/Card/LinkContainer';
 
 const ListWrapper = styled.ul`
   list-style: unset;
@@ -10,7 +10,7 @@ const ListWrapper = styled.ul`
   padding-inline-start: 0px;
 
   // Changes all items opacity when List section gets hover so the main (under the cursor ) List > Card gets attention
-  &:hover > ${A}{
+  &:hover > ${LinkContainer}{
     opacity: 0.5;
   }
 `;
