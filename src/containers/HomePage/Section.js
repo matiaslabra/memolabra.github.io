@@ -5,6 +5,7 @@ const Section = styled.section`
   position: relative;
   padding: 8rem;
   flex: 1;
+  height: 100vh;
 
   ${media.phone`
     flex-direction: row;
