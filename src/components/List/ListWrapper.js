@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import LinkContainer from '../../components/Card/LinkContainer';
+import LinkContainer from '../Card/LinkContainer';
 
 const ListWrapper = styled.ul`
   list-style: unset;
+  list-style-type: none;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;

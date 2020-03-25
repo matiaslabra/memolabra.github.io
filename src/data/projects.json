@@ -1,50 +1,47 @@
 [
   {
-    "name":"Portafolio website",
-    "language": "Javascript",
-    "description": "Portfolio website",
-    "technologies": ["React.js","styled-components","Webpack"],
-    "url": "https://github.com/matiaslabra/matiaslabra.github.io",
-    "date": "2020-02-01"
-  },
-  {
-    "name":"Service tracker ",
-    "language": "Javascript",
-    "description": "Keep track of services, rooms and dates in real-time",
-    "technologies": ["React.js","Redux","Socket.IO","styled-components","Webpack","MongoDB"],
+    "name":"Service tracker",
+    "language": ["Javascript"],
+    "description": "Keep track of services, rooms and dates in real-time.",
+    "technologies": ["React","Redux","Socket.IO","styled-components","Webpack","MongoDB"],
     "url": "https://github.com/matiaslabra/servicetracker",
-    "date": "2020-02-01"
+    "year": "2020",
+    "country": ["Australia","AUS"]
   },
   {
-    "name":"Portafolio website",
-    "language": "Javascript",
-    "description": "Portfolio website",
-    "technologies": ["React.js","styled-components","Webpack"],
+    "name":"Portfolio website",
+    "language": ["Javascript"],
+    "description": "This portfolio website.",
+    "technologies": ["React","styled-components","Webpack"],
     "url": "https://github.com/matiaslabra/matiaslabra.github.io",
-    "date": "2020-02-01"
+    "year": "2020",
+    "country": ["Australia","AUS"]
   },
   {
-    "name":"Service tracker ",
-    "language": "Javascript",
-    "description": "Keep track of services, rooms and dates in real-time",
-    "technologies": ["React.js","Redux","Socket.IO","styled-components","Webpack","MongoDB"],
-    "url": "https://github.com/matiaslabra/servicetracker",
-    "date": "2020-02-01"
+    "name":"GIS Dashboard",
+    "language": ["Javascript","PHP"],
+    "description": "Consuming 10.000+ points, vectors, polygons and rasters in a map layer.",
+    "technologies": ["React","Webpack","Symfony","OpenLayers","PostgreSQL","PostGIS"],
+    "url": "",
+    "year": "2016-2018",
+    "country": ["Chile","CHL"]
   },
   {
-    "name":"Portafolio website",
-    "language": "Javascript",
-    "description": "Portfolio website",
-    "technologies": ["React.js","styled-components","Webpack"],
-    "url": "https://github.com/matiaslabra/matiaslabra.github.io",
-    "date": "2020-02-01"
+    "name":"IoT Dashboard",
+    "language": ["Javascript","Python"],
+    "description": "Monitoring valve conditions in real time.",
+    "technologies": ["React","Socket.IO","MQTT","Webpack","MongoDB"],
+    "url": "",
+    "year": "2016",
+    "country": ["Chile","CHL"]
   },
   {
-    "name":"Service tracker ",
-    "language": "Javascript",
-    "description": "Keep track of services, rooms and dates in real-time",
-    "technologies": ["React.js","Redux","Socket.IO","styled-components","Webpack","MongoDB"],
-    "url": "https://github.com/matiaslabra/servicetracker",
-    "date": "2020-02-01"
+    "name":"Cloud base ERP",
+    "language": ["Javascript","PHP"],
+    "description": "SaaS ERP for small to medium businesses ",
+    "technologies": ["JQuery","Symfony","PostgreSQL"],
+    "url": "",
+    "year": "2015",
+    "country": ["Chile","CHL"]
   }
 ]

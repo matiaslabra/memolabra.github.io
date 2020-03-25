@@ -1,58 +1,58 @@
 import React from 'react'
-import H1 from '../../components/H1'
-import styled from 'styled-components';
-import {media} from '../../utils/styleUtils'
+
 // Data
-import projects from '../../data/projects'
+import projects from '../../data/projects';
 
 //Components
-import List from '../List';
+import {FaGithub, FaLinkedin} from 'react-icons/fa';
+import A from '../../components/A';
+import StyledH1 from './StyledH1'
+import List from '../../components/List';
 import RightSection from './RightSection';
 import LeftSection from './LeftSection';
+import LinkContainer from './LinkContainer';
+import LinkBox from './LinkBox';
+import Title from './Title';
+import SubTitle from './SubTitle';
+import Ul from './Ul';
+import Menu from './Menu';
+import MenuItem from './MenuItem';
+import MainRow from './MainRow';
 
 
-console.log(projects);
-const MainRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  ${media.phone`
-    flex-direction: column;
-  `}
-  
-`; 
-
-const A = styled.a`
-  color: #000;
-
-  &:hover {
-    color: #000;
-  }
-`;
-
-const Title = styled.div`
-  display:flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin-right: auto;
-`;
 
 export default function HomePage(){
   return(
     <MainRow>
       <LeftSection>
         <Title>
-          <H1>Hello, I'm Matías Labra.</H1>
-          <p>I am a Software Engineer living in Brisbane, Australia.
-            I love coding <A href="https://reactjs.org/">React.js</A>, solving problems and staying out my comfort zone. 
-            It always amazes me how lines of code can make lives easier.
-          </p>
-          <div className="links">
-            <div className="icon"><a target="_blank" rel="noopener noreferrer" href="mailto:gmlabra@gmail.com"><i className="ion-email "></i></a></div>
-            <div className="icon"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/matias-labra-a2bb4a172/"><i className="ion-social-linkedin-outline icon"></i>LinkedIn</a></div>
-            <div className="icon"><a target="_blank" rel="noopener noreferrer" href="https://github.com/matiaslabra"><i className="ion-social-github icon"></i>GitHub</a></div>
-          </div>
+          <StyledH1>Hello, I'm Matías Labra.</StyledH1>
+          <SubTitle>
+            <p>I am a Software Engineer currently looking for a web developer 
+              position in Brisbane, Australia. From exposing new endpoints to creating 
+              a new <A target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">React.js</A> component,
+               I would love a role where I can contribute to the team solving problems, advance my skills as a developer and 
+              learn cutting edge technologies.
+            </p>
+          </SubTitle>
         </Title>
+        <Menu>
+          <Ul>
+            <MenuItem active>Experience</MenuItem>
+            <MenuItem deactivate>Skills</MenuItem>
+            <MenuItem deactivate>Hobbies</MenuItem>
+          </Ul>
+        </Menu>
+        <LinkContainer>
+          <LinkBox target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/matias-labra-a2bb4a172/">
+            <FaLinkedin/>
+              LinkedIn
+            </LinkBox>
+          <LinkBox target="_blank" rel="noopener noreferrer" href="https://github.com/matiaslabra">
+            <FaGithub/>
+            GitHub
+          </LinkBox>
+        </LinkContainer>
       </LeftSection>
       <RightSection>
         <List items= {projects}/>
