@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import LinkContainer from '../Card/LinkContainer';
 
 const ListWrapper = styled.ul`
+  width: 100%;
   list-style: unset;
   list-style-type: none;
   margin-block-start: 0em;

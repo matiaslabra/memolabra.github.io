@@ -3,7 +3,6 @@ import Section from './Section';
 import {media} from '../../utils/styleUtils'
 
 const LeftSection = styled(Section)`
-  display: flex;
   flex-direction: column;
   position: fixed;
   height: 100vh;

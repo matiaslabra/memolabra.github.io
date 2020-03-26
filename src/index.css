@@ -20,9 +20,12 @@ code {
     monospace;
 }
 
-html, body, #root {
-  height: 100%;
+html, body {
   width: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
 *, :after, :before {

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {media} from '../../utils/styleUtils'
 
 const Section = styled.section`
+  display: flex; 
   position: relative;
   padding: 8rem;
   flex: 1;
