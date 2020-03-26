@@ -5,13 +5,12 @@ const Section = styled.section`
   position: relative;
   padding: 8rem;
   flex: 1;
-  height: 100vh;
+  // height: 100vh;
 
-  ${media.phone`
-    flex-direction: row;
-    flex: 1;
-    padding: 0 2rem ;
-  `}
+  ${media.desktop`
+    padding: 4rem 3rem;
+  `};   
+
 `;
 
 export default Section;

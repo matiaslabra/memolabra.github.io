@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {media} from '../../utils/styleUtils'
 
 const LinkContainer = styled.a`
   display: block;
@@ -22,6 +23,10 @@ const LinkContainer = styled.a`
     box-shadow: none;
     z-index: 2; 
   }
+
+  ${media.phone`
+
+  `}
 
 
 `;

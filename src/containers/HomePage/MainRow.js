@@ -5,7 +5,7 @@ const MainRow = styled.div`
   display: flex;
   flex-direction: row;
   height: 100vh;
-  ${media.phone`
+  ${media.tablet`
     flex-direction: column;
   `}
   
