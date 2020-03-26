@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import LinkContainer from '../Card/LinkContainer';
+import {media} from '../../utils/styleUtils'
 
 const ListWrapper = styled.ul`
   width: 100%;
@@ -15,6 +16,12 @@ const ListWrapper = styled.ul`
   &:hover > ${LinkContainer}{
     opacity: 0.5;
   }
+  ${media.phablet`
+    &:hover > ${LinkContainer}{
+      opacity: 1;
+    }
+  `}
+
 `;
 
 export default ListWrapper;

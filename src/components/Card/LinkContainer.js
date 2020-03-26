@@ -24,9 +24,18 @@ const LinkContainer = styled.a`
     z-index: 2; 
   }
 
-  ${media.phone`
-
+  ${media.phablet`
+    transition: none;
+  
+    &:hover{
+      transform: none;
+      box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+    }
   `}
+
+  &:first-child{
+    margin-top: 0px;
+  }
 
 
 `;
