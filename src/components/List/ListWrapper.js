@@ -16,7 +16,7 @@ const ListWrapper = styled.ul`
   &:hover > ${LinkContainer}{
     opacity: 0.5;
   }
-  ${media.phablet`
+  ${media.tablet`
     &:hover > ${LinkContainer}{
       opacity: 1;
     }

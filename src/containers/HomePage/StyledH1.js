@@ -21,7 +21,7 @@ const StyledH1 = styled(H1)`
   
   ${media.phone`
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    font-size: 3.3em;
+    font-size: 3.2em;
   `}
 
 `;

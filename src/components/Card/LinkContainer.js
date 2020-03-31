@@ -24,7 +24,7 @@ const LinkContainer = styled.a`
     z-index: 2; 
   }
 
-  ${media.phablet`
+  ${media.tablet`
     transition: none;
   
     &:hover{
