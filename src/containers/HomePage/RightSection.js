@@ -6,6 +6,7 @@ const RightSection = styled(Section)`
   right: 0;
   position: absolute;
   width: 768px;
+  flex-direction: column;
 
   ${media.desktop`
     position: absolute;
