@@ -4,17 +4,22 @@ import {media} from '../../utils/styleUtils'
 
 const LeftSection = styled(Section)`
   flex-direction: column;
-  position: fixed;
-  height: 100vh;
-  max-width: 476px;
+  flex: 0 0 480px;
   padding: 8rem 0rem 8rem 8rem;
+  background-color: white;
+  width: 480px;
 
   ${media.tablet`
+    padding: 4rem 0rem 4rem 4rem;
+    flex: 1 0 430px;
+
+  `}
+  ${media.phablet`
+    padding: 4rem 5rem;
+    height: auto; //fallback
+    flex: 1 0 auto; // auto height
     position: static;
-    padding: 4rem 3rem;
-    height: auto;
     width: 100%;
-    max-width: 100%;
   `}
 `;
 

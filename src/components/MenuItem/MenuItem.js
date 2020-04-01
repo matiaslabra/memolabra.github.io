@@ -16,10 +16,11 @@ const MenuItem = styled.a`
     width: 50%;
     font-weight: bold;
     color: #000;
+    border-bottom: 2px solid #000;
   `}
 
   
-  ${({ active }) => !active && `
+  ${({ active, deactivate }) => !active && !deactivate && `
     &:hover{
       transition: all .2s ease-in;
       font-weight: bold;

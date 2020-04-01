@@ -1,18 +1,24 @@
 /* html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%; 
+  height: 100%;
+}
+body {
+  overscroll-behavior: none;
+  overflow: hidden;
+}
+
 body {
   font-size: 1.5rem; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-}
-
-body {
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: white;
 }
 
 code {
@@ -23,12 +29,16 @@ code {
 html, body {
   display: block;
 }
-#root {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
 *, :after, :before {
   box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0em;
+  margin-inline-end: 0em;
+  padding-inline-start: 0em;
 }

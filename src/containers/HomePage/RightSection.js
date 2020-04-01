@@ -3,17 +3,17 @@ import Section from './Section';
 import {media} from '../../utils/styleUtils'
 
 const RightSection = styled(Section)`
-  right: 0;
-  position: absolute;
-  width: 768px;
   flex-direction: column;
+  padding: 8rem;
+  flex: 1 1 auto;
+  overflow-y: auto;
 
-  ${media.desktop`
-    position: absolute;
-    width: 560px;
+  ${media.tablet`
+    padding: 4rem;
   `}
   
-  ${media.tablet`
+  ${media.phablet`
+    overflow-y: unset;
     position: static;
     height: auto;
     width: 100%;

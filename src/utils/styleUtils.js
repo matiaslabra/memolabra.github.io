@@ -1,10 +1,10 @@
 import { css } from 'styled-components'
 
 const sizes = {
-  giant: 1400,
-  desktop: 1280,
-  tablet: 992,
-  phablet: 749,
+  giant: 1920,
+  desktop: 1440,
+  tablet: 1200,
+  phablet: 992,
   phone: 639,
 }
 

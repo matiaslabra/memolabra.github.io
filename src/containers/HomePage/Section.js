@@ -3,13 +3,12 @@ import {media} from '../../utils/styleUtils'
 
 const Section = styled.section`
   display: flex; 
-  position: relative;
-  padding: 8rem;
   flex: 1;
-  // height: 100vh;
+  height: 100vh;
+  padding: 8rem 10rem;
 
-  ${media.desktop`
-    padding: 4rem 3rem;
+  ${media.phablet`
+    padding: 4rem 5rem;
   `};   
 
 `;

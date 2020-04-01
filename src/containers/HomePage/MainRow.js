@@ -5,13 +5,20 @@ const MainRow = styled.div`
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 100%;
-  max-width: 1440px;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
+  justify-content: space-between;
+  overflow-y: unset;
 
-  ${media.tablet`
+  ${media.giant`
+    width: 1440px;
+  `}
+  
+  ${media.desktop`
+    width: 100%;
+  `}
+  
+  ${media.phablet`
     flex-direction: column;
   `}
   

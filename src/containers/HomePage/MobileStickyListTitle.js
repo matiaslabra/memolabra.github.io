@@ -7,7 +7,7 @@ const MobileStickyListTitle = styled(H3)`
   display: none;
   margin: 0px;
   margin-bottom: 1rem;
-  ${media.tablet`
+  ${media.phablet`
     display: block;
     position: sticky;
     padding: 1.25em 0;

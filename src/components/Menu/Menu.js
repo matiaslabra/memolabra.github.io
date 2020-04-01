@@ -5,7 +5,7 @@ const Menu = styled.nav`
   display: block;
   margin-top: 5rem;
 
-  ${media.tablet`
+  ${media.phablet`
     display: none;
   `}
 
