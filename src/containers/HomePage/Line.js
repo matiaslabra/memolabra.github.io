@@ -1,5 +1,6 @@
 
 import styled, { css } from 'styled-components';
+import {media} from '../../utils/styleUtils'
 
 const Line = styled.div`
   margin-bottom: 8px;
@@ -12,6 +13,13 @@ const Line = styled.div`
     position: absolute;
   
   }
+
+  ${media.phone`
+    margin-bottom: 2px;
+    height: 44px;
+  `}
+
+
   ${(props) => props.animationComplete && css`&:nth-child(2) > span{
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     background-repeat: no-repeat;

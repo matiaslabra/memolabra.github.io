@@ -1,14 +1,17 @@
-import React, { useRef } from 'react'
-
+import React, { useRef, useEffect, useState } from 'react'
+import useScrollSpy from 'react-use-scrollspy';
+//Animation
+import homePageAnimation from './animation'
 // Data
 import projects from '../../data/projects';
 
 //Components
+import IntroOverlay from '../../components/IntroOverlay';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import A from '../../components/A';
 import MobileStickyListTitle from './MobileStickyListTitle';
 import MobileListTitleHolder from './MobileListTitleHolder';
-import StyledH1 from './StyledH1'
+import Line from './Line'
 import List from '../../components/List';
 import RightSection from './RightSection';
 import LeftSection from './LeftSection';
@@ -23,19 +26,30 @@ import MainRow from './MainRow';
 
 //hooks
 
-import useScrollSpy from 'react-use-scrollspy';
-
 export default function HomePage(){
   
-  const sectionRefs = [useRef(null), useRef(null)];
+  const [animationComplete, setAnimationComplete] = useState(false);
+  const title = useRef(null);
+  const title2 = useRef(null);
+  const overlay = useRef(null);
+  const completeAnimation = () => {
+    console.log('complete called');
+    setAnimationComplete(true);
+  };
+
+  useEffect(() => {
+    homePageAnimation(completeAnimation, title,title2, overlay);
+  }, []);
+
+  const sectionRefsForScroll = [useRef(null), useRef(null)];
   const activeSection = useScrollSpy({
     offsetPx : 40,
-    sectionElementRefs : sectionRefs, // Array of References to DOM elements
+    sectionElementRefs : sectionRefsForScroll, // Array of References to DOM elements
   });
 
   const scrollToSection = sectionKey => e => {
     e.preventDefault(); //prevent url updating and jump to section
-    let elem = sectionRefs[sectionKey];
+    let elem = sectionRefsForScroll[sectionKey];
     elem.current.scrollIntoView({
       behavior: 'smooth', // smooth scroll
       block: 'start' // the upper border of the element will be aligned at the top of the visible part of the window of the scrollable area.
@@ -44,24 +58,26 @@ export default function HomePage(){
 
   return(
     <MainRow>
+      {animationComplete === false ? <IntroOverlay/> : ""}
       <MobileListTitleHolder active = {activeSection === 1 ? true :false}/>
-      <LeftSection ref={sectionRefs[0]}>
-        <Title>
-          <StyledH1>Hello, I'm Matías Labra.</StyledH1>
-          <SubTitle>
-            <p>I am a Software Engineer currently looking for a web developer 
-              position in Brisbane, Australia. From exposing new endpoints to creating 
-              a new <A target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">React.js</A> component,
-               I would love a role where I can contribute to the team solving problems, advance my skills as a developer and 
-              learn cutting edge technologies.
-            </p>
-          </SubTitle>
+      <LeftSection animationComplete = {animationComplete} ref={sectionRefsForScroll[0]}>
+        <Title animationComplete = {animationComplete}>
+          <Line animationComplete = {animationComplete}> <span ref={title}> Hello, I'm </span></Line>
+          <Line animationComplete = {animationComplete}> <span ref={title2}> Matías Labra.</span></Line>
         </Title>
+        <SubTitle>
+          <p>I am a Software Engineer currently looking for a web developer 
+            position in Brisbane, Australia. From exposing new endpoints to creating 
+            a new <A target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">React.js</A> component,
+              I would love a role where I can contribute to the team solving problems, advance my skills as a developer and 
+            learn cutting edge technologies.
+          </p>
+        </SubTitle>
         <Menu>
           <Ul>
-            <MenuItem href="#projects" active = {activeSection === 0 ? true : false} onClick={(e) => scrollToSection(0)(e)} > -Experience</MenuItem>
-            <MenuItem href="#skills"  active = {activeSection === 1 ? true : false} onClick={(e) => scrollToSection(1)(e)} > - Skills</MenuItem>
-            <MenuItem deactivate>Hobbies</MenuItem>
+            <MenuItem href="#projects" active = {activeSection === 0 ? true : false} onClick={(e) => scrollToSection(0)(e)} >Experience</MenuItem>
+            <MenuItem deactivate >Skills</MenuItem>
+            <MenuItem deactivate >Hobbies</MenuItem>
           </Ul>
         </Menu>
         <LinkContainer >
@@ -75,7 +91,7 @@ export default function HomePage(){
           </LinkBox>
         </LinkContainer>
       </LeftSection>
-      <RightSection ref={sectionRefs[1]}>
+      <RightSection animationComplete = {animationComplete} ref={sectionRefsForScroll[1]}>
         <div id="projects"  >
           <MobileStickyListTitle>Experience</MobileStickyListTitle>
           <List items={projects}/>
