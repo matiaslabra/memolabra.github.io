@@ -9,15 +9,6 @@
     "country": ["Australia","AUS"]
   },
   {
-    "name":"Portfolio website",
-    "language": ["Javascript"],
-    "description": "This portfolio website.",
-    "technologies": ["React","styled-components","Webpack"],
-    "url": "https://github.com/matiaslabra/matiaslabra.github.io",
-    "year": "2020",
-    "country": ["Australia","AUS"]
-  },
-  {
     "name":"GIS Dashboard",
     "language": ["Javascript","PHP"],
     "description": "Consuming 10.000+ points, vectors, polygons and rasters in a map layer.",
