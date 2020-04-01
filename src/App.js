@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import './App.css';
 import { Switch, Route, Router } from 'react-router-dom';
 import history from './utils/history'
 
