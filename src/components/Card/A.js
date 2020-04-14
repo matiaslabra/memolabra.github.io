@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {media} from '../../utils/styleUtils'
+import { media } from '../../utils/styleUtils';
 
-const LinkContainer = styled.a`
+const A = styled.a`
   flex: 1 0 45%;
   display: block;
   color: #000;
@@ -11,7 +11,7 @@ const LinkContainer = styled.a`
   transition: all .2s ease-in-out;
   border: 2px solid #000;
   ${'' /* z-index: 1; */}
-  cursor: ${props => props.href === '#' ? 'default' : 'pointer' };
+  cursor: ${(props) => (props.href === '#' ? 'default' : 'pointer')};
 
   // Scale the item and reset the opacity (previously set to 0.5 by List component )
   &:hover{
@@ -42,4 +42,4 @@ const LinkContainer = styled.a`
 
 `;
 
-export default LinkContainer;
+export default A;
