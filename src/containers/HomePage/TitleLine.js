@@ -1,10 +1,9 @@
+import styled, { css } from "styled-components";
+import { media } from "../../utils/styleUtils";
 
-import styled, { css } from 'styled-components';
-import {media} from '../../utils/styleUtils'
-
-const Line = styled.div`
+const TitleLine = styled.div`
   margin-bottom: 8px;
-  height: 56px;
+  height: 1em;
   position: relative;
   overflow: hidden;
   mix-blend-mode: difference;
@@ -20,7 +19,9 @@ const Line = styled.div`
   `}
 
 
-  ${(props) => props.animationComplete && css`&:nth-child(2) > span{
+  ${(props) =>
+    props.animationComplete &&
+    css`&:nth-child(2) > span{
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
@@ -37,8 +38,4 @@ const Line = styled.div`
 
 `;
 
-export default Line;
-
-
-
-  
+export default TitleLine;

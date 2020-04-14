@@ -3,11 +3,10 @@ import {media} from '../../utils/styleUtils'
 
 const LinkContainer = styled.div`
   display:flex;
-  margin-top: auto;
-  justify-content: space-evenly;
+  margin-top: 4rem;
 
   ${media.tablet`
-    margin-top: 5rem;
+    margin-top: 4rem;
   `}
 `;
 

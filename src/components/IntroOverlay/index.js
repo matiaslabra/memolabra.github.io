@@ -1,8 +1,8 @@
-import React from "react";
-import styled from 'styled-components';
+import React, { forwardRef } from "react";
+import styled from "styled-components";
 
 const Top = styled.div`
-  height: 100vh;
+  height: 100%;
   position: absolute;
   width: 100%;
   z-index: 8;
@@ -19,23 +19,14 @@ const OverlayTop = styled.div`
   right: 0;
   }
 `;
-const IntroOverlay = () => {
-  return (
-    <>
-      <Top className='intro-overlay'>
-        <Top className='top'>
-          <OverlayTop className='overlay-top'/>
-          {/* <OverlayTop className='overlay-top'/>
-          <OverlayTop className='overlay-top'/> */}
-        </Top>
-        {/* <div className='bottom'>
-          <div className='overlay-bottom'></div>
-          <div className='overlay-bottom'></div>
-          <div className='overlay-bottom'></div>
-        </div> */}
+const IntroOverlay = forwardRef((props, ref) => (
+  <>
+    <Top ref={ref}>
+      <Top>
+        <OverlayTop />
       </Top>
-    </>
-  );
-};
+    </Top>
+  </>
+));
 
 export default IntroOverlay;

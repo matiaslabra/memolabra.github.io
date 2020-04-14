@@ -1,13 +1,12 @@
 import React from 'react';
-import Card from '../../components/Card';
 import ListWrapper from './ListWrapper';
 
-function List({items}){
-  
+function List({items, component}){
+  const ComponentToRender = component
   return (
     <ListWrapper>
     {items.map((item,key)=>{
-      return <Card item={item} key={key}/> 
+      return <ComponentToRender item={item} key={key}/> 
       })
     }
   </ListWrapper>

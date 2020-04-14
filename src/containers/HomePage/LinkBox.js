@@ -6,10 +6,11 @@ const LinkBox = styled.a`
   text-decoration: none;
   color: #000;
   font-weight: 300;
+  margin-right: 2rem;
 
   & > svg{
     display: inline-block;
-    font-size:3rem;
+    font-size: 2rem;
     vertical-align: middle;
     margin-right: 1rem;
   }
