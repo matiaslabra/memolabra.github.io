@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import {media} from '../../utils/styleUtils'
 
 const H1 = styled.h1`
-  font-size: 4.15em;
+  font-size: 6em;
   line-height: 1;
   margin: 0;
 
   ${media.tablet`
-    font-size: 4.1em;
+    font-size: 5.3em;
   `}
 
   ${media.phone`
