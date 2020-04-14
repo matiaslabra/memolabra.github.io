@@ -29,7 +29,7 @@ import MainRow from "./MainRow";
 //hooks
 
 export default function HomePage() {
-  const [animationComplete, setAnimationComplete] = useState(true);
+  const [animationComplete, setAnimationComplete] = useState(false);
   const titleRef = useRef(null);
   const title2Ref = useRef(null);
   const overlayRef = useRef(null);
