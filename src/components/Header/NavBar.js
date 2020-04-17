@@ -7,6 +7,6 @@ export default styled.nav`
   align-items: center;
   width: 100%;
   background-color: white;
-  border-bottom:1px solid #eee;
+  border-bottom: 1px solid #eee;
   color: #000;
 `;

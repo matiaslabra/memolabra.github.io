@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Section from './Section';
-import {media} from '../../utils/styleUtils'
+import { media } from '../../utils/styleUtils';
 
 const LeftSection = styled(Section)`
   flex-direction: column;

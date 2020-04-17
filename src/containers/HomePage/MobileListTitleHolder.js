@@ -1,10 +1,10 @@
-
 import styled from 'styled-components';
-import {media} from '../../utils/styleUtils'
+import { media } from '../../utils/styleUtils';
 
 const MobileListTitleHolder = styled.div`
-  
-  ${({ active }) => active && media.phablet`
+  ${({ active }) =>
+    active &&
+    media.phablet`
     display: block;
     width: 100%;
     position: fixed;
@@ -19,11 +19,6 @@ const MobileListTitleHolder = styled.div`
     transition: all .2s ease-in-out;
     width: 100%;
   `}
-
 `;
 
 export default MobileListTitleHolder;
-
-
-
-  

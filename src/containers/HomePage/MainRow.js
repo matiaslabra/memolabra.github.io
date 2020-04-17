@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {media} from '../../utils/styleUtils'
+import { media } from '../../utils/styleUtils';
 
 const MainRow = styled.div`
   display: flex;
@@ -22,6 +22,6 @@ const MainRow = styled.div`
     flex-direction: column;
   `}
   
-`; 
+`;
 
 export default MainRow;

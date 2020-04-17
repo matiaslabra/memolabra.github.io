@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { media } from "../../utils/styleUtils";
+import styled from 'styled-components';
+import { media } from '../../utils/styleUtils';
 
 const FlexContainer = styled.div`
   display: flex;

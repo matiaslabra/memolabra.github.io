@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {media} from '../../utils/styleUtils';
+import { media } from '../../utils/styleUtils';
 
 const Menu = styled.nav`
   display: block;
@@ -8,7 +8,6 @@ const Menu = styled.nav`
   ${media.phablet`
     display: none;
   `}
-
 `;
 
 export default Menu;

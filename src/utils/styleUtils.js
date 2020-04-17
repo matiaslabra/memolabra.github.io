@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css } from 'styled-components';
 
 const sizes = {
   giant: 1920,
@@ -6,7 +6,7 @@ const sizes = {
   tablet: 1200,
   phablet: 992,
   phone: 639,
-}
+};
 
 // iterate through the sizes and create a media template
 export const media = Object.keys(sizes).reduce((accumulator, label) => {
@@ -18,6 +18,6 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
     @media (max-width: ${pxSize}px) {
       ${css(...args)};
     }
-  `
-  return accumulator
-}, {})
+  `;
+  return accumulator;
+}, {});

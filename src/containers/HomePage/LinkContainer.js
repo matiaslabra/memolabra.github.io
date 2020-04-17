@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import {media} from '../../utils/styleUtils'
+import { media } from '../../utils/styleUtils';
 
 const LinkContainer = styled.div`
-  display:flex;
+  display: flex;
   margin-top: 4rem;
 
   ${media.tablet`

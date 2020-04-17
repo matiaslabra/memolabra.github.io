@@ -7,7 +7,6 @@ const Ul = styled.ul`
 
   align-items: center;
   text-align: center;
-
 `;
 
 export default Ul;

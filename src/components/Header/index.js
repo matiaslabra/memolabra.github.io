@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import NavBar from "./NavBar";
-import Logo from "./Logo";
-import FlexContainer from "./FlexContainer";
+import NavBar from './NavBar';
+import Logo from './Logo';
+import FlexContainer from './FlexContainer';
 // import HeaderLink from "./HeaderLink";
 // import Toggle from "./Toggle";
 // import ToggleWrap from "./ToggleWrap";

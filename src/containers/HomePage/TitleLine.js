@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { media } from "../../utils/styleUtils";
+import styled, { css } from 'styled-components';
+import { media } from '../../utils/styleUtils';
 
 const TitleLine = styled.div`
   margin-bottom: 8px;

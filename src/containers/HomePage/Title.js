@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import H1 from "../../components/H1";
+import styled from 'styled-components';
+import H1 from '../../components/H1';
 // import {media} from '../../utils/styleUtils'
 
 const Title = styled(H1)`

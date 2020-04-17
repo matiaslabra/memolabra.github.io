@@ -1,7 +1,6 @@
-
 import styled from 'styled-components';
 import H3 from '../../components/H3';
-import {media} from '../../utils/styleUtils'
+import { media } from '../../utils/styleUtils';
 
 const MobileStickyListTitle = styled(H3)`
   display: block;
@@ -18,12 +17,6 @@ const MobileStickyListTitle = styled(H3)`
     font-size: 1em;
     z-index:3;
   `}
-  
-
 `;
 
 export default MobileStickyListTitle;
-
-
-
-  

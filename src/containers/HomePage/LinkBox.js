@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const LinkBox = styled.a`
-  text-align:center;
+  text-align: center;
   display: inline-block;
   text-decoration: none;
   color: #000;
   font-weight: 300;
   margin-right: 2rem;
 
-  & > svg{
+  & > svg {
     display: inline-block;
     font-size: 2rem;
     vertical-align: middle;

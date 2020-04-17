@@ -1,38 +1,52 @@
 [
   {
-    "name":"Service tracker",
+    "name": "Service tracker",
     "language": ["Javascript"],
     "description": "Keep track of services, rooms and dates in real-time.",
-    "technologies": ["React","Redux","Socket.IO","styled-components","Webpack","MongoDB"],
+    "technologies": [
+      "React",
+      "Redux",
+      "Socket.IO",
+      "styled-components",
+      "Webpack",
+      "MongoDB"
+    ],
     "url": "https://github.com/matiaslabra/servicetracker",
     "year": "2020",
-    "country": ["Australia","AUS"]
+    "country": ["Australia", "AUS"]
   },
   {
-    "name":"GIS Dashboard",
-    "language": ["Javascript","PHP"],
+    "name": "GIS Dashboard",
+    "language": ["Javascript", "PHP"],
     "description": "Consuming 10.000+ points, vectors, polygons and rasters in a map layer.",
-    "technologies": ["React","Webpack","Symfony","OpenLayers","PostgreSQL","PostGIS"],
+    "technologies": [
+      "React",
+      "Webpack",
+      "Symfony",
+      "OpenLayers",
+      "PostgreSQL",
+      "PostGIS"
+    ],
     "url": "",
     "year": "2016-2018",
-    "country": ["Chile","CHL"]
+    "country": ["Chile", "CHL"]
   },
   {
-    "name":"IoT Dashboard",
-    "language": ["Javascript","Python"],
+    "name": "IoT Dashboard",
+    "language": ["Javascript", "Python"],
     "description": "Monitoring valve conditions in real time.",
-    "technologies": ["React","Socket.IO","MQTT","Webpack","MongoDB"],
+    "technologies": ["React", "Socket.IO", "MQTT", "Webpack", "MongoDB"],
     "url": "",
     "year": "2016",
-    "country": ["Chile","CHL"]
+    "country": ["Chile", "CHL"]
   },
   {
-    "name":"Cloud base ERP",
-    "language": ["Javascript","PHP"],
+    "name": "Cloud base ERP",
+    "language": ["Javascript", "PHP"],
     "description": "SaaS ERP for small to medium businesses ",
-    "technologies": ["JQuery","Symfony","PostgreSQL"],
+    "technologies": ["JQuery", "Symfony", "PostgreSQL"],
     "url": "",
     "year": "2015",
-    "country": ["Chile","CHL"]
+    "country": ["Chile", "CHL"]
   }
 ]

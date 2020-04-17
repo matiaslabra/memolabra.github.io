@@ -10,17 +10,21 @@ const MenuItem = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3px;
-  transition: all .2s ease-in-out;
-  
-  ${({ active }) => active  && `
+  transition: all 0.2s ease-in-out;
+
+  ${({ active }) =>
+    active &&
+    `
     width: 50%;
     font-weight: bold;
     color: #000;
     border-bottom: 2px solid #000;
   `}
 
-  
-  ${({ active, deactivate }) => !active && !deactivate && `
+  ${({ active, deactivate }) =>
+    !active &&
+    !deactivate &&
+    `
     &:hover{
       transition: all .2s ease-in;
       font-weight: bold;
@@ -28,15 +32,14 @@ const MenuItem = styled.a`
       width: 50%
     }
   `};
-  
- 
-  
-  ${({ deactivate }) => deactivate && `
+
+  ${({ deactivate }) =>
+    deactivate &&
+    `
     font-weight: 300;
     color: #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
   `}
-  
 `;
 
 export default MenuItem;
