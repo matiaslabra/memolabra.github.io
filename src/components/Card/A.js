@@ -13,7 +13,8 @@ const A = styled.a`
   cursor: ${(props) => (props.href === '#' ? 'default' : 'pointer')};
   // Scale the item and reset the opacity (previously set to 0.5 by List component )
   &:hover {
-    opacity: 1 !important; //sorry mom
+    ${'' /* sorry mom */}
+    opacity: 1 !important;
     box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
     transition: all 0.2s ease-in;
   }
