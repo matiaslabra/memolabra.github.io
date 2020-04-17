@@ -1,7 +1,7 @@
 [
   {
     "name": "La Española",
-    "description": "Domain name and initial server setup (temporary web) for a new cider.",
+    "description": "Domain name, server setup and temporary website for their new cider.",
     "technologies": ["WordPress 5", "Custom CSS", "2019"],
     "link": "site1x1200.png",
     "url": "http://www.sangrialaespañola.cl"
