@@ -25,6 +25,7 @@ import SubTitle from './SubTitle';
 import Card from '../../components/Card';
 import ImageCard from '../../components/ImageCard';
 import MainRow from './MainRow';
+import Footer from './Footer';
 
 //hooks
 
@@ -58,70 +59,85 @@ export default function HomePage() {
   // };
 
   return (
-    <MainRow>
+    <>
       {animationComplete === false ? <IntroOverlay ref={overlayRef} /> : ''}
       <Header triggerLogo={activeSection >= 1 ? true : false}></Header>
-      {/* <MobileListTitleHolder active = {activeSection === 1 ? true :false}/> */}
-      <LeftSection animationComplete={animationComplete}>
-        <Title
-          animationComplete={animationComplete}
-          ref={sectionRefsForScroll[0]}
-        >
-          <TitleLine animationComplete={animationComplete}>
-            <span ref={titleRef}> Hello, I'm </span>
-          </TitleLine>
-          <TitleLine animationComplete={animationComplete}>
-            <span ref={title2Ref}> Matías Labra.</span>
-          </TitleLine>
-        </Title>
-        <SubTitle ref={sectionRefsForScroll[1]}>
-          <p>
-            I am a Software Engineer currently looking for a Web Developer
-            position in Brisbane, Australia. From exposing new endpoints to
-            creating a new{' '}
-            <A
+      <MainRow>
+        <LeftSection animationComplete={animationComplete}>
+          <Title
+            animationComplete={animationComplete}
+            ref={sectionRefsForScroll[0]}
+          >
+            <TitleLine animationComplete={animationComplete}>
+              <span ref={titleRef}> Hello, I'm </span>
+            </TitleLine>
+            <TitleLine animationComplete={animationComplete}>
+              <span ref={title2Ref}> Matías Labra.</span>
+            </TitleLine>
+          </Title>
+          <SubTitle ref={sectionRefsForScroll[1]}>
+            <p>
+              I am a Software Engineer currently looking for a Web Developer
+              position in Brisbane, Australia. From exposing new endpoints to
+              creating a new{' '}
+              <A
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://reactjs.org/"
+              >
+                React.js
+              </A>{' '}
+              component, I would love a role where I can contribute to the team
+              solving problems, advance my skills as a developer and learn
+              cutting edge technologies.
+            </p>
+          </SubTitle>
+          <LinkContainer>
+            <LinkBox
               target="_blank"
               rel="noopener noreferrer"
-              href="https://reactjs.org/"
+              href="https://www.linkedin.com/in/matias-labra-a2bb4a172/"
             >
-              React.js
-            </A>{' '}
-            component, I would love a role where I can contribute to the team
-            solving problems, advance my skills as a developer and learn cutting
-            edge technologies.
-          </p>
-        </SubTitle>
-        <LinkContainer>
-          <LinkBox
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/matias-labra-a2bb4a172/"
-          >
-            <FaLinkedin />
-            LinkedIn
-          </LinkBox>
-          <LinkBox
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/matiaslabra"
-          >
-            <FaGithub />
-            GitHub
-          </LinkBox>
-        </LinkContainer>
-      </LeftSection>
-      <RightSection
-        animationComplete={animationComplete}
-        ref={sectionRefsForScroll[2]}
-      >
-        <div id="projects">
-          <H2>Recent works</H2>
-          <MobileStickyListTitle>Full Stack</MobileStickyListTitle>
-          <List items={projects} component={Card} />
-          <MobileStickyListTitle>Front End</MobileStickyListTitle>
-          <List items={clients} component={ImageCard} />
-        </div>
-      </RightSection>
-    </MainRow>
+              <FaLinkedin />
+              LinkedIn
+            </LinkBox>
+            <LinkBox
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/matiaslabra"
+            >
+              <FaGithub />
+              GitHub
+            </LinkBox>
+          </LinkContainer>
+        </LeftSection>
+        <RightSection
+          animationComplete={animationComplete}
+          ref={sectionRefsForScroll[2]}
+        >
+          <div id="projects">
+            <H2>Recent works</H2>
+            <MobileStickyListTitle>Full Stack</MobileStickyListTitle>
+            <List items={projects} component={Card} />
+            <MobileStickyListTitle>Front End</MobileStickyListTitle>
+            <List items={clients} component={ImageCard} />
+          </div>
+        </RightSection>
+      </MainRow>
+      <Footer>
+        Made with{' '}
+        <span role="img" aria-label="coffee and heart emoji">
+          ♥️ & ☕️
+        </span>{' '}
+        with{' '}
+        <A
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/matiaslabra/matiaslabra.github.io"
+        >
+          React and Styled Components
+        </A>
+      </Footer>
+    </>
   );
 }
