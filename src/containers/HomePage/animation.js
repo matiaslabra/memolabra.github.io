@@ -12,7 +12,7 @@ const animation = (completeAnimation, titleRef, title2Ref, overlayRef) => {
     block: 'start',
   });
 
-  tl.from([titleRef.current, title2Ref.current], 1, {
+  tl.from([titleRef.current, title2Ref.current], 0.75, {
     y: 120,
     ease: 'power4.out',
     delay: 0.5,
