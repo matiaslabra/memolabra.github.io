@@ -4,7 +4,7 @@ import useScrollSpy from 'react-use-scrollspy';
 import homePageAnimation from './animation';
 // Data
 import projects from '../../data/projects';
-// import clients from '../../data/clients';
+import clients from '../../data/clients';
 
 //Components
 import Header from '../../components/Header';
@@ -23,7 +23,7 @@ import LinkBox from './LinkBox';
 import Title from './Title';
 import SubTitle from './SubTitle';
 import Card from '../../components/Card';
-// import ImageCard from '../../components/ImageCard';
+import ImageCard from '../../components/ImageCard';
 import MainRow from './MainRow';
 
 //hooks
@@ -118,8 +118,8 @@ export default function HomePage() {
           <H2>Recent works</H2>
           <MobileStickyListTitle>Full Stack</MobileStickyListTitle>
           <List items={projects} component={Card} />
-          {/* <MobileStickyListTitle>Front End</MobileStickyListTitle>
-          <List items={clients} component={ImageCard} /> */}
+          <MobileStickyListTitle>Front End</MobileStickyListTitle>
+          <List items={clients} component={ImageCard} />
         </div>
       </RightSection>
     </MainRow>

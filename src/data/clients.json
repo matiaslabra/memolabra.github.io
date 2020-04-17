@@ -1,10 +1,16 @@
 [
   {
-    "name": "Service tracker",
-    "url": "site1x1200.png"
+    "name": "La Española",
+    "description": "Domain name and initial server setup (temporary web) for a new cider.",
+    "technologies": ["WordPress 5", "Custom CSS", "2019"],
+    "link": "site1x1200.png",
+    "url": "http://www.sangrialaespañola.cl"
   },
   {
-    "name": "Service tracker",
-    "url": "site2x1200.png"
+    "name": "Andino",
+    "description": "Domain name, server setup and theming for a small custom logic business.",
+    "technologies": ["WordPress 5", "Custom CSS", "2018"],
+    "link": "site2x1200.png",
+    "url": "http://www.transportesandino.cl"
   }
 ]
