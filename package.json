@@ -28,6 +28,9 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "resolutions": {
+    "acorn": "^7.1.1"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
