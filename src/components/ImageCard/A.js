@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { media } from '../../utils/styleUtils';
 
-const LinkContainer = styled.a`
+const A = styled.a`
   display: flex;
   flex: 1 0 45%;
   color: #000;
@@ -13,11 +13,12 @@ const LinkContainer = styled.a`
 
   // Scale the item and reset the opacity (previously set to 0.5 by List component )
   &:hover {
+    ${'' /* sorry mom */}
     opacity: 1 !important;
-    ${'' /* transform: scale(1.1); */}
-    transition: all .2s ease-in;
-    box-shadow: none;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+    transition: all 0.2s ease-in;
   }
+
   ${media.tablet`
     
     transition: none;
@@ -37,4 +38,4 @@ const LinkContainer = styled.a`
   `}
 `;
 
-export default LinkContainer;
+export default A;

@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkContainer from './LinkContainer';
+import A from './A';
 import Footer from './Footer';
 import H3 from '../H3';
 import Box from './Box.js';
@@ -7,7 +7,7 @@ import Box from './Box.js';
 function ImageCard({ item, onClickAction }) {
   let img = require(`../../assets/${item.link}`);
   return (
-    <LinkContainer
+    <A
       href={item.url}
       onClick={(e) => {
         e.preventDefault();
@@ -24,7 +24,7 @@ function ImageCard({ item, onClickAction }) {
           {item.technologies ? item.technologies.join(' - ') : ''}
         </Footer>
       </Box>
-    </LinkContainer>
+    </A>
   );
 }
 
