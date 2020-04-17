@@ -9,4 +9,5 @@ export default styled.nav`
   background-color: white;
   border-bottom: 1px solid #eee;
   color: #000;
+  z-index: 7;
 `;
