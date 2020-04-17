@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 import { media } from '../../utils/styleUtils';
 
-const LinkContainer = styled.div`
+const LinkContainer = styled.a`
   display: flex;
-  align-items: stretch;
   flex: 1 0 45%;
   color: #000;
   margin: 1rem 1rem;
@@ -14,18 +13,10 @@ const LinkContainer = styled.div`
 
   // Scale the item and reset the opacity (previously set to 0.5 by List component )
   &:hover {
-    opacity: 1 !important; //sorry mom
-    // background: linear-gradient(110deg, #fdcd3b55 60%, #ffed4b55 60%);
+    opacity: 1 !important;
     ${'' /* transform: scale(1.1); */}
     transition: all .2s ease-in;
     box-shadow: none;
-  }
-  & > img {
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    width: 100%;
-    height: 100%;
   }
   ${media.tablet`
     
