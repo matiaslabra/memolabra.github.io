@@ -19,7 +19,7 @@ import List from '../../components/List';
 import RightSection from './RightSection';
 import LeftSection from './LeftSection';
 import LinkContainer from './LinkContainer';
-import LinkBox from './LinkBox';
+import StyledA from './StyledA';
 import Title from './Title';
 import SubTitle from './SubTitle';
 import Card from '../../components/Card';
@@ -93,22 +93,22 @@ export default function HomePage() {
             </p>
           </SubTitle>
           <LinkContainer>
-            <LinkBox
+            <StyledA
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/matias-labra-a2bb4a172/"
             >
               <FaLinkedin />
               LinkedIn
-            </LinkBox>
-            <LinkBox
+            </StyledA>
+            <StyledA
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/matiaslabra"
             >
               <FaGithub />
               GitHub
-            </LinkBox>
+            </StyledA>
           </LinkContainer>
         </LeftSection>
         <RightSection

@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-
-const LinkBox = styled.a`
+import A from '../../components/A';
+const LinkBox = styled(A)`
   text-align: center;
   display: inline-block;
-  text-decoration: none;
-  color: #000;
   font-weight: 300;
   margin-right: 2rem;
 
