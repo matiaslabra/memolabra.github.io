@@ -5,6 +5,7 @@ function List({ items, component }) {
   const ComponentToRender = component;
 
   const onClick = (elem) => {
+    elem.preventDefault();
     const anchor =
       elem.target.tag !== 'A' ? elem.target.closest('a') : elem.target;
     if (anchor.href.split('/').pop() !== '#') {

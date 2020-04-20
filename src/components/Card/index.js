@@ -10,10 +10,7 @@ function Card({ item, onClickAction }) {
       href={item.url ? item.url : '#'}
       target={item.url ? '_blank' : '_self'}
       rel="noopener noreferrer"
-      onClick={(e) => {
-        e.preventDefault();
-        onClickAction(e);
-      }}
+      onClick={onClickAction}
     >
       <Tagline>
         {item.language

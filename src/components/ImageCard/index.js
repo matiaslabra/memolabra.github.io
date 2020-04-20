@@ -7,13 +7,7 @@ import Box from './Box.js';
 function ImageCard({ item, onClickAction }) {
   let img = require(`../../assets/${item.link}`);
   return (
-    <A
-      href={item.url}
-      onClick={(e) => {
-        e.preventDefault();
-        onClickAction(e);
-      }}
-    >
+    <A href={item.url} onClick={onClickAction}>
       <Box basis="45%">
         <img src={img} alt="project" />
       </Box>

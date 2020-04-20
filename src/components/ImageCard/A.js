@@ -8,7 +8,7 @@ const A = styled.a`
   margin: 1rem 1rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-  height: 100%;
+  min-height: 100%;
   border: 2px solid black;
 
   // Scale the item and reset the opacity (previously set to 0.5 by List component )
@@ -28,12 +28,10 @@ const A = styled.a`
       box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
     }
 
-    &:first-child{
-
-    }
   `}
 
   ${media.phablet`
+    flex-direction: column;
     flex: 1 0 100%;
   `}
 `;
