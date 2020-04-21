@@ -12,6 +12,8 @@ const animation = (completeAnimation, titleRef, title2Ref, overlayRef) => {
     block: 'start',
   });
 
+  gsap.to('body', 0, { css: { visibility: 'visible' } });
+
   tl.from([titleRef.current, title2Ref.current], 0.75, {
     y: 120,
     ease: 'power4.out',
