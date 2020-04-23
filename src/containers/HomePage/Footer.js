@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { media } from '../../utils/styleUtils';
 
 const Footer = styled.footer`
   font-size: 1rem;

@@ -19,13 +19,9 @@ const OverlayTop = styled.div`
   right: 0;
 `;
 const IntroOverlay = forwardRef((props, ref) => (
-  <>
-    <Top ref={ref}>
-      <Top>
-        <OverlayTop />
-      </Top>
-    </Top>
-  </>
+  <Top ref={ref}>
+    <OverlayTop />
+  </Top>
 ));
 
 export default IntroOverlay;
