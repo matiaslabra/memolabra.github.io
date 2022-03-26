@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "gsap": "^3.2.6",
-    "minimist": "^1.2.2",
+    "minimist": "^1.2.6",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-icons": "^3.9.0",
